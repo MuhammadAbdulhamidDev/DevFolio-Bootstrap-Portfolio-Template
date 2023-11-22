@@ -1,0 +1,156 @@
+@media (min-width: 992px) {
+  .dropdown-main-menu,
+  .dropdown-sub-menu {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+  }
+  .dropdown-main-link:hover .dropdown-main-menu {
+    visibility: visible;
+    opacity: 1;
+    top: 45px;
+  }
+  .dropdown-main-menu {
+    left: 30px;
+    top: calc(100% + 30px);
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px 0;
+    z-index: 999;
+  }
+  .dropdown-sub-link:hover .dropdown-sub-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  .dropdown-sub-menu {
+    left: -12.5rem;
+    top: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* ===== Custimize Scrollbar ===== */
+  ::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+  /* ===== Nav Bar ===== */
+  .nav-item > a {
+    color: #4e4e4e !important;
+  }
+  .nav-item .active {
+    color: #0078ff !important;
+  }
+  .nav-item .active::before {
+    width: 0% !important;
+  }
+  .nav-item:hover a::before {
+    width: 0%;
+  }
+  .menu-icon,
+  .closed-icon {
+    cursor: pointer;
+    font-size: 1.75rem;
+    line-height: 0 !important;
+  }
+  .closed-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 2500;
+  }
+  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(78, 78, 78, 0.9);
+    z-index: 1500;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+  }
+  .navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding-block: 1rem;
+    background-color: #fff;
+    z-index: 15555 !important;
+    overflow-y: auto;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+  }
+  .navbar-mobile .dropdown-main-menu,
+  .navbar-mobile .dropdown-sub-menu {
+    position: static !important;
+    margin: 10px 20px !important;
+    padding: 10px 0;
+    display: none;
+    background-color: #fff !important;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  }
+  .dropdown-main-link:hover .dropdown-main-menu,
+  .dropdown-sub-link:hover .dropdown-sub-menu {
+    display: block;
+  }
+  .dropdown-main-menu > li,
+  .dropdown-sub-menu > li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  .dropdown-main-menu li a,
+  .dropdown-sub-menu li a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4e4e4e !important;
+  }
+
+  /* ===== Services Section ===== */
+  .service-icon {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  /* ===== About Section ===== */
+  .card-about {
+    padding-inline: 2rem;
+  }
+  .about-info-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .about-info-row > div {
+    width: fit-content;
+  }
+  /* ===== Carousel Section ===== */
+  .carousel-para {
+    padding-inline: 1rem;
+  }
+  /* ===== Contact Section ===== */
+  .card-contact {
+    padding-inline: 1rem !important;
+  }
+  .form-btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,64 @@
+/* ===== Hero Section ===== */
+@keyframes blink {
+  0% {
+    background-color: #fff;
+  }
+  49% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+/* ===== Numbers Section ===== */
+/* Define the keyframes for the counter animation */
+@keyframes counter-01 {
+  /* Start the animation with --num at 0 */
+  from {
+    --num: 0;
+  }
+  /* End the animation with --num at 450 */
+  to {
+    --num: 450;
+  }
+}
+/* Define the keyframes for the counter animation */
+@keyframes counter-02 {
+  /* Start the animation with --num at 0 */
+  from {
+    --num: 0;
+  }
+  /* End the animation with --num at 25 */
+  to {
+    --num: 25;
+  }
+}
+/* Define the keyframes for the counter animation */
+@keyframes counter-03 {
+  /* Start the animation with --num at 0 */
+  from {
+    --num: 0;
+  }
+  /* End the animation with --num at 550 */
+  to {
+    --num: 550;
+  }
+}
+/* Define the keyframes for the counter animation */
+@keyframes counter-04 {
+  /* Start the animation with --num at 0 */
+  from {
+    --num: 0;
+  }
+  /* End the animation with --num at 48 */
+  to {
+    --num: 48;
+  }
+}
