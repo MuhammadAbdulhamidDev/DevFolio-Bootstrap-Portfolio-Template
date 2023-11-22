@@ -46,7 +46,7 @@ a {
   background: #0078ff;
   width: 2.5rem;
   height: 2.5rem;
-  z-index: 9900;
+  z-index: 1000;
   outline: none;
 }
 #myBtn > i {
